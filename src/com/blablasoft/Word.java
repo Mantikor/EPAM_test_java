@@ -8,12 +8,14 @@ public class Word extends Sentence {
         this.setValue(value);
     }
 
+    @Override
     public void setValue(String value){
         this.value = new LinkedList<String>();
         for (int i = 0; i < value.length(); i++)
             this.value.add(String.valueOf(value.charAt(i)));
     }
 
+    @Override
     public String getValue(){
         String value = "";
         for (int i=0; i < this.value.size(); i++)
