@@ -29,7 +29,6 @@ public class Sentence {
         this.value = new LinkedList<String>();
         while(st.hasMoreTokens()) {
             this.value.add(st.nextToken());
-            //System.out.println(st.nextToken());
         }
     }
 
