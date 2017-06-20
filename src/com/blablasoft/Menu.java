@@ -47,7 +47,6 @@ public class Menu {
         for (int i = 1; i < entries.size(); i++) {
             MenuEntry entry = entries.get(i);
             String entryFormatted = String.format(MENU_PATTERN, (i), entry.getTitle());
-            //String entryFormatted = String.format(MENU_PATTERN, (i + 1), entry.getTitle());
             buffer.append(entryFormatted);
         }
         MenuEntry entry = entries.get(0);
