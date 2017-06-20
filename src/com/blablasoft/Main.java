@@ -32,7 +32,7 @@ public class Main {
             @Override
             public void run() {
                 System.out.println("Reading lines from file...");
-                TxtFile txtfile = new TxtFile("C:\\Users\\Admin\\.Projects\\EPAM_test_java\\test.txt");
+                TxtFile txtfile = new TxtFile("test.txt");
                 String newSentence = txtfile.getRndString();
                 System.out.println("Input index for change: ");
                 String input = sc.nextLine();
