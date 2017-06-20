@@ -27,7 +27,7 @@ public class Menu {
             try {
                 String line = reader.readLine();
                 int choice = Integer.parseInt(line);
-                MenuEntry entry = entries.get(choice); // - 1);
+                MenuEntry entry = entries.get(choice);
                 entry.run();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -36,7 +36,7 @@ public class Menu {
     }
 
     public Menu addEntry(MenuEntry entry) {
-        int index = entries.size(); // - 1;
+        int index = entries.size();
         entries.add(index, entry);
         return this;
     }
